@@ -7,11 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/touseefdotdev/jenkins-deployment.git'
-            }
-        }
 
         stage('Build Docker Image') {
             steps {
